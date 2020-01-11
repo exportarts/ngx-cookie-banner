@@ -1,27 +1,94 @@
-# NgxCookieBanner
+# ngx-cookie-banner
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0-rc.8.
+[![npm](https://img.shields.io/npm/v/ngx-cookie-banner.svg)](https://www.npmjs.com/package/ngx-cookie-banner)
 
-## Development server
+## Motivation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This lib is inspired by [angular2-cookie-law](https://github.com/andreasonny83/angular2-cookie-law)
+which seems to be discontinued. Therefore, I rewrote the main
+functionality and removed much of the opinionated styles and
+behaviour.
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Install the dependency**
 
-## Build
+`npm i --save-exact ngx-cookie-banner`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+**Import NgxCookieBannerModule**
 
-## Running unit tests
+```ts
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxCookieBannerModule } from 'ngx-cookie-banner';
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    NgxCookieBannerModule.forRoot({
+      cookieName: 'ngx-cookie-banner-demo-app',
+    })
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
 
-## Running end-to-end tests
+**Use the component**
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```html
+<!-- app.component.html -->
 
-## Further help
+<ngx-cookie-banner #cookie>
+    <div class="banner-inner">
+        <span>
+            We use Cookies!
+            <a role="button" (click)="cookie.dismiss()">dismiss</a>
+        </span>
+    </div>
+</ngx-cookie-banner>
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```css
+/* app.component.scss */
+
+.banner-inner {
+    background: red;
+}
+.banner-inner a {
+    font-weight: bold;
+    cursor: pointer;
+}
+```
+
+```ts
+/* app.component.ts */
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent implements AfterViewInit, OnDestroy {
+  
+  @ViewChild('cookie')
+  banner: NgxCookieBannerComponent;
+
+  private _cookieSub: Subscription;
+
+  // It is currently necessary to manually subscribe at this
+  // point to initialize the banner component.
+  ngAfterViewInit() {
+    this._cookieSub = this.banner.isSeen.subscribe();
+  }
+
+  ngOnDestroy() {
+    this._cookieSub.unsubscribe();
+  }
+
+}
+```
