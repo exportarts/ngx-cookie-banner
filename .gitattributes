@@ -1,0 +1,2 @@
+# Ignore demo app in language stats
+projects/demo/* linguist-documentation
