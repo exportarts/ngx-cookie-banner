@@ -1,0 +1,7 @@
+<div class="banner"
+     *ngIf="!_removeComponent"
+     [@transition]="_transition"
+     (@transition.done)="_onAnimationFinish($event)"
+>
+    <ng-content></ng-content>
+</div>
