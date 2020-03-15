@@ -1,6 +1,7 @@
 # ngx-cookie-banner
 
 [![npm](https://img.shields.io/npm/v/ngx-cookie-banner.svg)](https://www.npmjs.com/package/ngx-cookie-banner)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=exportarts_ngx-cookie-banner&metric=alert_status)](https://sonarcloud.io/dashboard?id=exportarts_ngx-cookie-banner)
 
 ## Motivation
 
