@@ -29,7 +29,7 @@ export class NgxCookieBannerModule {
    * 
    * @param config Optional config. If not provided, defaults will be used.
    */
-  static forRoot(config?: NgxCookieBannerConfig): ModuleWithProviders {
+  static forRoot(config?: NgxCookieBannerConfig): ModuleWithProviders<NgxCookieBannerModule> {
     return {
       ngModule: NgxCookieBannerModule,
       providers: [
