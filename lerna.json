@@ -1,0 +1,11 @@
+{
+  "packages": [
+    "projects/ngx-cookie-banner"
+  ],
+  "version": "0.0.4",
+  "command": {
+    "version": {
+      "allowBranch": "master"
+    }
+  }
+}

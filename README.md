@@ -1,5 +1,6 @@
 # ngx-cookie-banner
 
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 [![npm](https://img.shields.io/npm/v/ngx-cookie-banner.svg)](https://www.npmjs.com/package/ngx-cookie-banner)
 [![Build Status](https://travis-ci.com/exportarts/ngx-cookie-banner.svg?branch=master)](https://travis-ci.com/exportarts/ngx-cookie-banner)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=exportarts_ngx-cookie-banner&metric=alert_status)](https://sonarcloud.io/dashboard?id=exportarts_ngx-cookie-banner)
