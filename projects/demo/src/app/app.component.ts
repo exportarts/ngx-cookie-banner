@@ -48,7 +48,7 @@ import { NgxCookieBannerComponent } from 'projects/ngx-cookie-banner/src/lib/com
 export class AppComponent implements AfterViewInit {
   title = 'demo';
   
-  @ViewChild('cookie')
+  @ViewChild('cookie', { static: true })
   banner: NgxCookieBannerComponent;
 
   ngAfterViewInit() {
