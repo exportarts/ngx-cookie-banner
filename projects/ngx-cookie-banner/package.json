@@ -1,6 +1,6 @@
 {
   "name": "ngx-cookie-banner",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "peerDependencies": {
     "@angular/common": "^8.2.0 || 9.x",
     "@angular/core": "^8.2.0 || 9.x",
