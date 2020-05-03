@@ -77,7 +77,7 @@ export class AppModule { }
 })
 export class AppComponent implements AfterViewInit, OnDestroy {
   
-  @ViewChild('cookie')
+  @ViewChild('cookie', { static: true })
   banner: NgxCookieBannerComponent;
 
   private _cookieSub: Subscription;
