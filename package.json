@@ -7,7 +7,7 @@
     "build": "ng build ngx-cookie-banner --prod",
     "create-release": "lerna version --conventional-commits"
   },
-  "private": true,
+  "license": "MIT",
   "dependencies": {
     "@angular/animations": "9.1.9",
     "@angular/common": "9.1.9",
