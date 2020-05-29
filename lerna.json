@@ -2,7 +2,7 @@
   "packages": [
     "projects/ngx-cookie-banner"
   ],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "command": {
     "version": {
       "allowBranch": "master"

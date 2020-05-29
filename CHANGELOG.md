@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/exportarts/ngx-cookie-banner/compare/v0.1.0...v0.1.1) (2020-05-29)
+
+
+### Bug Fixes
+
+* **license:** add license information to package.json ([201957c](https://github.com/exportarts/ngx-cookie-banner/commit/201957ca7f828746a3cba55732284f245491cd42))
+
+
+
+
+
 # [0.1.0](https://github.com/exportarts/ngx-cookie-banner/compare/v0.0.4...v0.1.0) (2020-05-03)
 
 
