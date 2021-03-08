@@ -8,9 +8,8 @@
 ## Motivation
 
 This lib is inspired by [angular2-cookie-law](https://github.com/andreasonny83/angular2-cookie-law)
-which seems to be discontinued. Therefore, I rewrote the main
-functionality and removed much of the opinionated styles and
-behaviour.
+which [is discontinued](https://github.com/andreasonny83/angular2-cookie-law/issues/42#issuecomment-655597390). Therefore, I rewrote the main
+functionality and removed much of the opinionated styles and behaviour.
 
 ## Getting Started
 
