@@ -2,8 +2,8 @@
   "name": "ngx-cookie-banner",
   "version": "0.1.1",
   "peerDependencies": {
-    "@angular/common": "^8.2.0 || 9.x",
-    "@angular/core": "^8.2.0 || 9.x",
+    "@angular/common": "^8.2.0 || 9.x || 18.x",
+    "@angular/core": "^8.2.0 || 9.x || 18.x",
     "tslib": "^1.10.0 || ^2.0.0"
   },
   "license": "MIT"
